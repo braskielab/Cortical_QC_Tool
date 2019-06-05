@@ -1,5 +1,5 @@
 # Cortical QC Tool
-Software Demonstation done at Demonstrated at OHBM 2019
+Software Demonstation presented at OHBM 2019
 
 Steps to use in a bash en
 
