@@ -7,6 +7,6 @@ Steps to use in a bash environment
  - You can modify the code to run in a for loop or an SGE, depending on your system capabilities.
 
 2)Run 'make_cortical_QC_internal_braskie.sh' to create the webpage
-  - Usage: navigate to the directory with the image files, and then 
-  bash make_cortical_QC_internal_braskie.sh specified output directory
+  - Usage: navigate to the directory with the image files, and then run
+  - 'bash make_cortical_QC_internal_braskie.sh specified output directory'
 
