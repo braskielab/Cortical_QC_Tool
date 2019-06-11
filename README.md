@@ -8,5 +8,5 @@ Steps to use in a bash environment
 
 2)Run 'make_cortical_QC_internal_braskie.sh' to create the webpage
   - Usage: navigate to the directory with the image files, and then run
-  - 'bash make_cortical_QC_internal_braskie.sh specified output directory'
+  - 'bash make_cortical_QC_internal_braskie.sh /specified/output/directory'
 
