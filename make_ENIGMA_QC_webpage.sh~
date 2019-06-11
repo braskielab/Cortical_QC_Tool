@@ -1,0 +1,68 @@
+#!/bin/bash
+#$ -S /bin/bash
+
+###### no need to edit this script
+###### to run >> ./make_ENIGMA_QC_webpage.sh ${dirO}  (where $dirO is the output directory specified for the Matlab script)
+
+QC_directory=$1
+cd $QC_directory
+#subject_list=`ls -d */`
+subject_list=(0187 0332 0409 0412 0514 0590 0655 0736 0813 0814 0815 0816 0817 0818 0819 0820 0821 0822 0824 0825 0826 0827 0828 0829 0830 0831 0833 0835 0836 0837 0838 0839 0840 0841 0842 0843 0844 0845 0846 0848 0849 0850 0851 0852 0853 0854 0855 0856 0857 0858 0859 0860 0861 0862 0863 0865 0866 0867 0868 0869 0870 0871 0872 0874 0875 0876 0877 0878 0879 0880 0881 0882 0883 0884 0885 0893 0895 0898 0899 0900 0902 0903 0904 0906 0907 0908 0909 0910 0913 0917 0918 0919 0920 0921 0923 0924 0925 0926 0929 0930 0931 0934 0935 0937 0938 0939 0940 0943 0944 0945 0946 0947 0950 0951 0952 0954 0955 0956 0957 0959 0960 0961 0965 0968 0971 0972 0974 0975 0976 0977 0981 0982 0987 0988 0993 0998 1004 1005 1011 1012 1013 1021 1022 1027 1033 1034 1036 1045 1046 1049 1055 1056 1062 1073 1075 1076 1082 1083 1085 1096 1097 1098)
+
+echo "<html>" 												>  ENIGMA_Cortical_QC.html
+echo "<head>"                                                   >> ENIGMA_Cortical_QC.html
+echo "<style type=\"text/css\">"								>> ENIGMA_Cortical_QC.html
+echo "*"                                                        >> ENIGMA_Cortical_QC.html
+echo "{"														>> ENIGMA_Cortical_QC.html
+echo "margin: 0px;"												>> ENIGMA_Cortical_QC.html
+echo "padding: 0px;"											>> ENIGMA_Cortical_QC.html
+echo "}"														>> ENIGMA_Cortical_QC.html
+echo "html, body"												>> ENIGMA_Cortical_QC.html
+echo "{"														>> ENIGMA_Cortical_QC.html
+echo "height: 100%;"											>> ENIGMA_Cortical_QC.html
+echo "}"														>> ENIGMA_Cortical_QC.html
+echo "</style>"													>> ENIGMA_Cortical_QC.html
+echo "</head>"													>> ENIGMA_Cortical_QC.html
+
+echo "<body>" 													>>  ENIGMA_Cortical_QC.html
+
+
+for sub in ${subject_list};
+do
+echo "<table cellspacing=\"1\" style=\"width:100%;background-color:#000;\">"				>> ENIGMA_Cortical_QC.html
+echo "<tr>"																					>> ENIGMA_Cortical_QC.html
+echo "<td> <FONT COLOR=WHITE FACE=\"Geneva, Arial\" SIZE=5> $sub </FONT> </td>"             >> ENIGMA_Cortical_QC.html
+echo "</tr>"                                                                                >> ENIGMA_Cortical_QC.html
+echo "<tr>"                                                                                 >> ENIGMA_Cortical_QC.html
+echo "<td><a href=\"file:"$sub"/Cortical_set_Axial_10.png\"><img src=\""$sub"/Cortical_set_Axial_70_10.png\" width=\"100%\" ></a></td>"	>> ENIGMA_Cortical_QC.html
+echo "<td><a href=\"file:"$sub"/Cortical_set_Axial_20.png\"><img src=\""$sub"/Cortical_set_Axial_70_20.png\" width=\"100%\" ></a></td>"	>> ENIGMA_Cortical_QC.html
+echo "<td><a href=\"file:"$sub"/Cortical_set_Axial_40.png\"><img src=\""$sub"/Cortical_set_Axial_70_40.png\" width=\"100%\" ></a></td>"	>> ENIGMA_Cortical_QC.html
+echo "<td><a href=\"file:"$sub"/Cortical_set_Axial_50.png\"><img src=\""$sub"/Cortical_set_Axial_70_50.png\" width=\"100%\" ></a></td>"	>> ENIGMA_Cortical_QC.html
+echo "</tr>"																				>> ENIGMA_Cortical_QC.html
+echo "<tr>"																					>> ENIGMA_Cortical_QC.html
+echo "<td><a href=\"file:"$sub"/Cortical_set_Axial_60.png\"><img src=\""$sub"/Cortical_set_Axial_70_60.png\" width=\"100%\" ></a></td>"	>> ENIGMA_Cortical_QC.html
+echo "<td><a href=\"file:"$sub"/Cortical_set_Axial_80.png\"><img src=\""$sub"/Cortical_set_Axial_70_80.png\" width=\"100%\" ></a></td>"	>> ENIGMA_Cortical_QC.html
+echo "<td><a href=\"file:"$sub"/Cortical_set_Axial_85.png\"><img src=\""$sub"/Cortical_set_Axial_70_85.png\" width=\"100%\" ></a></td>"	>> ENIGMA_Cortical_QC.html
+echo "<td><a href=\"file:"$sub"/Cortical_set_Axial_90.png\"><img src=\""$sub"/Cortical_set_Axial_70_90.png\" width=\"100%\" ></a></td>"	>> ENIGMA_Cortical_QC.html
+#echo "<td><a href=\"file:"$sub"/Cortical_set_Axial_92.png\"><img src=\""$sub"/Cortical_set_Axial_70_92.png\" width=\"100%\" ></a></td>"	>> ENIGMA_Cortical_QC.html
+echo "</tr>"																				>> ENIGMA_Cortical_QC.html
+echo "<tr>"																					>> ENIGMA_Cortical_QC.html
+echo "<td><a href=\"file:"$sub"/Cortical_set_Coronal_10.png\"><img src=\""$sub"/Cortical_set_Coronal_70_10.png\" width=\"100%\" ></a></td>"	>> ENIGMA_Cortical_QC.html
+echo "<td><a href=\"file:"$sub"/Cortical_set_Coronal_20.png\"><img src=\""$sub"/Cortical_set_Coronal_70_20.png\" width=\"100%\" ></a></td>"	>> ENIGMA_Cortical_QC.html
+echo "<td><a href=\"file:"$sub"/Cortical_set_Coronal_40.png\"><img src=\""$sub"/Cortical_set_Coronal_70_40.png\" width=\"100%\" ></a></td>"	>> ENIGMA_Cortical_QC.html
+echo "<td><a href=\"file:"$sub"/Cortical_set_Coronal_50.png\"><img src=\""$sub"/Cortical_set_Coronal_70_50.png\" width=\"100%\" ></a></td>"	>> ENIGMA_Cortical_QC.html
+echo "</tr>"																				>> ENIGMA_Cortical_QC.html
+echo "<tr>"																					>> ENIGMA_Cortical_QC.html
+echo "<td><a href=\"file:"$sub"/Cortical_set_Coronal_60.png\"><img src=\""$sub"/Cortical_set_Coronal_70_60.png\" width=\"100%\" ></a></td>"	>> ENIGMA_Cortical_QC.html
+echo "<td><a href=\"file:"$sub"/Cortical_set_Coronal_80.png\"><img src=\""$sub"/Cortical_set_Coronal_70_80.png\" width=\"100%\" ></a></td>"	>> ENIGMA_Cortical_QC.html
+echo "<td><a href=\"file:"$sub"/Cortical_set_Coronal_85.png\"><img src=\""$sub"/Cortical_set_Coronal_70_85.png\" width=\"100%\" ></a></td>"	>> ENIGMA_Cortical_QC.html
+echo "<td><a href=\"file:"$sub"/Cortical_set_Coronal_90.png\"><img src=\""$sub"/Cortical_set_Coronal_70_90.png\" width=\"100%\" ></a></td>"	>> ENIGMA_Cortical_QC.html
+#echo "<td><a href=\"file:"$sub"/Cortical_set_Coronal_92.png\"><img src=\""$sub"/Cortical_set_Coronal_70_92.png\" width=\"100%\" ></a></td>"	>> ENIGMA_Cortical_QC.html
+echo "</tr>"																				>> ENIGMA_Cortical_QC.html
+echo "</table>"                                                                             >> ENIGMA_Cortical_QC.html
+done;
+
+echo "</body>"                                                                              >> ENIGMA_Cortical_QC.html
+echo "</html>"                                                                              >> ENIGMA_Cortical_QC.html
+
+
