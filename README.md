@@ -13,4 +13,5 @@ Steps to use in a bash environment
 3) Use the jupyter notebook file 'edit_spreadsheet_cortical.ipynb' to remove the failed region measures. This will set those specific regions to N/A
 
 If you use this tool, please cite the following abstract:
+
 Deydeep Kothapalli, Meral A. Tubi, Fabian W. Corlier, Sophia I. Thomopoulos, Paul M. Thompson, Neda Jahanshad and Meredith N. Braskie. Interactive Tool for Visual Quality Control of Cortical Parcellations, Organization for Human Brain Mapping (OHBM) 2019. (Software demonstration and poster presented)
